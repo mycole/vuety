@@ -1,5 +1,10 @@
 <template>
-  <div class="home"> <h1> {{ msg }} </h1></div> </template>
+  <div class="home"> <h1> {{ msg }} </h1></div>
+
+
+
+
+</template>
 
   <script>
 
@@ -7,7 +12,7 @@
     name: 'home',
     data() {
     return {
-      msg: 'welcome to your vue js app'
+      msg: 'Dies ist dein vue Applikation'
     }
   }
     }
