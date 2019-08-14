@@ -2,6 +2,8 @@
   <div>
   <h1> {{ msg }} </h1>
 <CheckBox></CheckBox>
+<CheckBox></CheckBox>
+<CheckBox></CheckBox>
 <!-- <div class="rio">
   <input type="checkbox" v-model="checked">
 {{ checked ? "yes" : "no" }}

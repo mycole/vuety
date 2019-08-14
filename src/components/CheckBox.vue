@@ -19,3 +19,9 @@ export default {
 
 
 </script>
+
+
+<style scoped>
+/* https://www.w3schools.com/howto/tryit.asp?filename=tryhow_css_custom_checkbox */
+
+</style>
