@@ -1,25 +1,28 @@
 <template>
   <div>
-  <div class="test"> <h1> {{ msg }} </h1></div>
-
-<div class="rio">
+  <h1> {{ msg }} </h1>
+<CheckBox></CheckBox>
+<!-- <div class="rio">
   <input type="checkbox" v-model="checked">
 {{ checked ? "yes" : "no" }}
 </div>
-
+-->
 </div>
 </template>
 
   <script>
-
+  import CheckBox from '@/components/CheckBox.vue'
 
 
   export default {
-    name: 'test',
+    name: 'Test',
     data() {
     return {
       msg: 'Kommen wir zur Codierung'
     }
+  },
+  components: {
+    CheckBox
   }
     }
 
