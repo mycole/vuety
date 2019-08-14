@@ -5,6 +5,7 @@ import Home from '@/views/Home.vue'
 import HelloWorld from '@/views/HelloWorld.vue'
 import One from '@/views/One.vue'
 import Test1 from '@/views/Test1.vue'
+import Main from '@/views/Main.vue'
 
 Vue.use(Router)
 
@@ -14,6 +15,11 @@ export default new Router({
   routes: [
     {
       path: '/',
+      name: 'Main',
+      component: Main
+    },
+    {
+      path: '/Home',
       name: 'Home',
       component: Home
     },

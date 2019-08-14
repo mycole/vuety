@@ -7,6 +7,7 @@
             <li>  <router-link to='/HelloWorld'>HelloWorld</router-link></li>
           <li>    <router-link to='/One'>One</router-link></li>
           <li>    <router-link to='/Test1'>Test1</router-link></li>
+              <li>    <router-link to='/'>Main</router-link></li>
         </ul>
     </div>
 </div>
