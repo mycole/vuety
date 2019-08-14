@@ -1,27 +1,31 @@
 <template>
   <div id="app">
+    <NavLinks></NavLinks>
     <img alt="Vue logo" src="./assets/logo.png">
-    <HelloWorld msg="Welcome to Your Vue.js App"/>
+    <HelloWorld msg="Welcome to Your Vue.js Apps"/>
 
-<ul>
+<!-- <ul>
   <li><router-link to='/Home'>Home</router-link></li>
   <li>    <router-link to='/HelloWorld'>HelloWorld</router-link>  </li>
   <li>    <router-link to='/One'>One</router-link>  </li>
   <li>    <router-link to='/Test1'>Test1</router-link>  </li>
 </ul>
-
+-->
 <router-view/>
+
   </div>
 </template>
 
 <script>
-// import HelloWorld from '@/views/HelloWorld.vue'
+import HelloWorld from '@/components/HelloWorld.vue'
+import NavLinks from '@/components/NavLinks.vue'
 
 export default {
   name: 'app',
-/*  components: {
-    HelloWorld
-  } */
+  components: {
+    HelloWorld,
+    NavLinks
+  }
   }
 </script>
 
