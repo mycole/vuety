@@ -1,9 +1,27 @@
 <template>
   <div>
   <h1> {{ msg }} </h1>
+
+
+  <label class="big-container">
+
+    <label class="container">
+  <CheckBox></CheckBox>
+  <CheckBox></CheckBox>
+  <CheckBox></CheckBox>
+  </label>
+
+
+    <label class="container">
 <CheckBox></CheckBox>
 <CheckBox></CheckBox>
 <CheckBox></CheckBox>
+</label>
+
+
+
+
+</label>
 <!-- <div class="rio">
   <input type="checkbox" v-model="checked">
 {{ checked ? "yes" : "no" }}
@@ -31,6 +49,26 @@
 </script>
 
 <style scoped>
+
+.big-container {
+  display: flex;
+  flex-flow: row;
+  position: relative;
+  justify-content:  center;
+}
+
+
+
+.container {
+  display: flex;
+  flex-flow: column;
+  flex-wrap: wrap;
+  width: 300px;
+position: relative;
+align-content:  center;
+
+}
+
 
 </style>
 

@@ -8,6 +8,8 @@
           <li>    <router-link to='/One'>One</router-link></li>
           <li>    <router-link to='/Test1'>Test1</router-link></li>
               <li>    <router-link to='/'>Main</router-link></li>
+              <li>    <router-link to='/Test2'>Test2</router-link></li>
+                <li>    <router-link to='/Test3'>Test3</router-link></li>
         </ul>
     </div>
 </div>
