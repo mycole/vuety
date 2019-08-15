@@ -1,81 +1,54 @@
 <template>
-    <div id="app">
-        <!-- JD-TABLE REQUIRED - TEMPLATE -->
-        <JDTable
-            :option                 = "tableOptions"
-            :loader                 = "tableLoader"
-            :event-from-app         = "eventFromApp"
-            :event-from-app-trigger = "eventFromAppTrigger"
-            @event-from-jd-table    = "processEventFromApp( $event )"
-        />
+    <div class="table-responsive">
+        <table class="table-hover" v-if="data">
+            <thead>
+                <tr>
+                    <th>Business</th>
+                    <th>Founder</th>
 
-        <!-- JD-TABLE REQUIRED - EXCEL EXPORT -->
-        <iframe id="excelExportArea" style="display:none"></iframe>
+                    <!-- and so on -->
+                </tr>
+            </thead>
+            <tbody>
+                <tr v-for="(item, idx) in archivelist" v-bind:key="item.id">
+                    <td>{{ item.businessName }}></td>
+                    <td>{{ item.founderName }}></td>
+
+                    <!-- and so on -->
+                </tr>
+            </tbody>
+        </table>
     </div>
 </template>
 
+
 <script>
-    // JD-TABLE REQUIRED - COMPONENT REGISTRATION
-    import "@fortawesome/fontawesome-free/css/all.min.css";
-    import JDTable from 'vue-jd-table';
+export default {
+  name: 'GridComponent',
+  data() {
+    return {
+        data: null
+    };
+},
 
-    export default
-    {
-        name : 'GridComponent',
+mounted() {
+    this.getData();
 
-        // JD-TABLE REQUIRED - COMPONENT REGISTRATION
-        components:
-        {
-            JDTable
-        },
+},
 
-        // JD-TABLE REQUIRED - OPTIONS/PROPS
-        data ()
-        {
-            return {
-        tableOptions :
-        {
-            columns :
-            [
-                {
-                    name          : 'businessName',
-                    title         : 'Business Name',
-                    width         : 30,
-                    order         : 1,
-                    type          : 'String',
-                    sort          : true,
-                    sortDirection : 'asc',
-                    filterable    : true,
-                    enabled       : true
-                },
-                {
-                    name       : 'ownerName',
-                    title      : 'Owner',
-                    width      : 30,
-                    order      : 2,
-                    type       : 'String',
-                    filterable : true,
-                    enabled    : true
-                },
-                {
-                    name       : 'ownerAge',
-                    title      : 'Age',
-                    width      : 30,
-                    order      : 3,
-                    type       : 'Number',
-                    filterable : true,
-                    enabled    : false
-                }
-            ]
-        }
+methods: {
+    getData() {
+        // vue-resource example
+        this.$http.get('data.json', {responseType: 'json'}).then(response => {
+            return response.json();
+        }).then(jsonData => {
+            this.data = JSON.parse(jsonData);
+        }).catch(e => {
+            console.log('Error', e);
+        });
     }
 }
-}
+
+  }
+
 </script>
-
-<style lang="scss">
-    // JD-TABLE OPTIONAL - VARIABLE OVERRIDE
-
-    // JD-TABLE REQUIRED - THEME
-    @import "~vue-jd-table/dist/assets/jd-table.scss";
-</style>
