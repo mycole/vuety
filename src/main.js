@@ -3,7 +3,7 @@ import App from './App.vue'
 import router from './router/router'
 import axios from 'axios'
 
-axios.defaults.baseURL = "https://api.example.com"
+axios.defaults.baseURL = "process.env.API_ENDPOINT"
 
 Vue.config.productionTip = false
 
