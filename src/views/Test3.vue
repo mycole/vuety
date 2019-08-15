@@ -1,5 +1,6 @@
 <template>
 <GridComponent></GridComponent>
+
 </template>
 
   <script>
