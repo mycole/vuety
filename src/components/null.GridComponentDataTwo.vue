@@ -1,3 +1,5 @@
+<!--  https://forum.vuejs.org/t/fetch-local-json/42538   -->
+
 <template>
     <div>
 
@@ -40,11 +42,6 @@ import users from "@/data/data.json"
             }
           }
       }
-
-
-
-
-
 
 // WORKING: https://stackoverflow.com/questions/56628157/vue-populate-table-with-axios
 //https://stackoverflow.com/questions/45565349/how-to-acces-external-json-file-objects-in-vue-js-app/45566350#45566350

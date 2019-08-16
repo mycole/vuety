@@ -12,12 +12,12 @@
                       </tr>
                   </thead>
                   <tbody>
-                      <tr v-for="user in users" :key="user.email">
+                      <tr v-for="user in users" :key="user.id">
                         <input type="checkbox" v-model="checked" :value="user.id">
                           <td>{{user.id}}</td>
-                          <td>{{user.name}}</td>
-                          <td>{{user.email}}</td>
-                          <td>{{user.phone}}</td>
+                          <td>{{users.name}}</td>
+                          <td>{{users.email}}</td>
+                          <td>{{users.phone}}</td>
                       </tr>
                   </tbody>
     </table>
@@ -32,17 +32,12 @@ import users from "@/data/data.json"
 
       export default{
         name: "GridComponentDataTwo",
-          computed: {
-            users() {
-              return users.users.map(user => {
-                return user.name;
-              });
-            }
+        data: function() {
+          return {
+           users
           }
-      }
-
-
-
+        }
+        }
 
 
 

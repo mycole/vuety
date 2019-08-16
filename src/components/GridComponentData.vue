@@ -12,7 +12,7 @@
                       </tr>
                   </thead>
                   <tbody>
-                      <tr v-for="user in users" :key="user.email">
+                      <tr v-for="user in users" :key="user.id">
                         <input type="checkbox" v-model="checked" :value="user.id">
                           <td>{{user.id}}</td>
                           <td>{{user.name}}</td>
