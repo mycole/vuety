@@ -1,14 +1,13 @@
 <template>
-
-<div>
-<CheckBoxLeach></CheckBoxLeach>
-<CheckBoxLeach></CheckBoxLeach>
+  <div>
+    {{ msg }}
+<GridComponentData></GridComponentData>
 
 </div>
 </template>
 
   <script>
-  import CheckBoxLeach from '@/components/CheckBoxLeach.vue'
+  import GridComponentData from '@/components/GridComponentData.vue'
 
 
   export default {
@@ -17,11 +16,11 @@
     return {
 
 
-      msg: 'la casa examen cuatro'
+      msg: 'das Haus der Prüfung vier'
     }
   },
   components: {
-    CheckBoxLeach
+    GridComponentData
 
   }
     }

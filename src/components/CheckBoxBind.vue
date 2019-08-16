@@ -1,9 +1,9 @@
 <template>
 <div>
   <label class="container">
-  <input type="checkbox"  v-model="checked">
+  <input type="checkbox" v-model="isChecked">
   <span class="checkmark"></span>
-  <label for="checkbox">{{ checked }}</label>
+  <label for="checkbox">{{ isChecked }}</label>
 </label>
 </div>
 </template>
@@ -13,10 +13,13 @@
 <script>
 
 export default {
-  data() {
+  data: function() {
     return {
-      checked: false
+      isChecked: false
     }
+  },
+  methods: {
+
   }
 }
 

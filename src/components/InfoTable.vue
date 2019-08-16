@@ -7,6 +7,14 @@
 </label>
 
 
+<label class="container">
+<CheckBoxBind></CheckBoxBind>
+<CheckBoxBind></CheckBoxBind>
+<CheckBox></CheckBox>
+</label>
+
+
+
 </div>
 </template>
 
@@ -14,10 +22,13 @@
 
 <script>
 import CheckBox from '@/components/CheckBox.vue'
+import CheckBoxBind from '@/components/CheckBoxBind.vue'
 
 export default {
       name: "InfoTable",
-      components:{ CheckBox
+      components:{
+        CheckBox,
+        CheckBoxBind
 }
 }
 

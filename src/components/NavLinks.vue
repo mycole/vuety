@@ -10,7 +10,8 @@
               <li>    <router-link to='/'>Main</router-link></li>
               <li>    <router-link to='/Test2'>Test2</router-link></li>
                 <li>    <router-link to='/Test3'>Test3</router-link></li>
-                <li>    <router-link to='/Test4'>Test4</router-link></li>
+                  <li>    <router-link to='/Test4'>Test4</router-link></li>
+                  <li>    <router-link to='/Test5'>Test5</router-link></li>
         </ul>
     </div>
 </div>
