@@ -1,26 +1,26 @@
 <template>
   <div>
     {{ msg }}
-<GridComponent></GridComponent>
+<GridComponentData></GridComponentData>
 
 </div>
 </template>
 
   <script>
-  import GridComponent from '@/components/GridComponent.vue'
+  import GridComponentData from '@/components/GridComponentData.vue'
 
 
   export default {
-    name: 'Test3',
+    name: 'Test4',
     data() {
     return {
 
 
-      msg: 'la casa examen tres'
+      msg: 'das Haus der Prüfung vier'
     }
   },
   components: {
-    GridComponent
+    GridComponentData
 
   }
     }
