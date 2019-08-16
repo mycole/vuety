@@ -1,25 +1,27 @@
 <template>
 
+<div>
+<CheckBoxLeach></CheckBoxLeach>
+<CheckBoxLeach></CheckBoxLeach>
 
-<GridComponent></GridComponent>
-
+</div>
 </template>
 
   <script>
-  import GridComponent from '@/components/GridComponent.vue'
+  import CheckBoxLeach from '@/components/CheckBoxLeach.vue'
 
 
   export default {
-    name: 'Test3',
+    name: 'Test4',
     data() {
     return {
 
 
-      msg: 'la casa examen tres'
+      msg: 'la casa examen cuatro'
     }
   },
   components: {
-    GridComponent
+    CheckBoxLeach
 
   }
     }
