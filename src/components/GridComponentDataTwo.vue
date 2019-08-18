@@ -12,10 +12,10 @@
                       </tr>
                   </thead>
                   <tbody>
-                      <tr v-for="user in users" :key="user.id">
-                        <input type="checkbox" v-model="checked" :value="user.id">
-                          <td>{{user.id}}</td>
-                          <td>{{users.name}}</td>
+                      <tr v-for="users in users" :key="users.id">
+                        <input type="checkbox" v-model="checked" :value="users.id">
+                          <td>{{users.id}}</td>
+                          <td>{{users.username}}</td>
                           <td>{{users.email}}</td>
                           <td>{{users.phone}}</td>
                       </tr>
@@ -36,10 +36,14 @@ import users from "@/data/data.json"
           return {
            users
           }
-        }
-        }
-
-
+        },
+        methods: function() {
+          r => r.json(users)
+          .then(json => {
+            this.users=json;
+        })
+}
+}
 
 // WORKING: https://stackoverflow.com/questions/56628157/vue-populate-table-with-axios
 //https://stackoverflow.com/questions/45565349/how-to-acces-external-json-file-objects-in-vue-js-app/45566350#45566350
