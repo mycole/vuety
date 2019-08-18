@@ -13,9 +13,9 @@
 
 
     <label class="container">
-<CheckBox></CheckBox>
-<CheckBox></CheckBox>
-<CheckBox></CheckBox>
+<CheckBoxBind></CheckBoxBind>
+<CheckBoxBind></CheckBoxBind>
+<CheckBoxBind></CheckBoxBind>
 </label>
 
 
@@ -32,7 +32,7 @@
 
   <script>
   import CheckBox from '@/components/CheckBox.vue'
-
+import CheckBoxBind from '@/components/CheckBoxBind.vue'
 
   export default {
     name: 'Test',
@@ -42,7 +42,8 @@
     }
   },
   components: {
-    CheckBox
+    CheckBox,
+    CheckBoxBind
   }
     }
 
