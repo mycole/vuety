@@ -1,10 +1,14 @@
 <template>
     <div>
 
+
       <table>
         <thead class="thead-dark">
                       <tr>
-                          <th></th>
+                          <th>
+                            <input type="checkbox" v-model="selectAll" @click="select">
+                            <i class="form-icon"></i>
+                          </th>
                           <th>id#</th>
                           <th>Full Name</th>
                           <th>Email</th>
@@ -34,13 +38,24 @@ import users from "@/data/data.json"
         name: "GridComponentDataTwo",
         data: function() {
           return {
-           users
+           users,
+           checked: [],
+           selectAll: false
           }
         },
-        methods: function() {
-          json => 
-            this.users=json;
+        methods: {
+                function() {
+                    json => this.users=json;
+                            },
 
+              select() {
+                        this.checked = [];
+                        if (!this.selectAll) {
+                          for (let users in this.users) {
+                            this.checked.push(this.users[users].id);
+                          }
+                        }
+}
 }
 }
 
