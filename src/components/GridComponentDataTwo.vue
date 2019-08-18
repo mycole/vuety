@@ -6,7 +6,7 @@
         <thead class="thead-dark">
                       <tr>
                           <th>
-                            <input type="checkbox" v-model="selectAll" @click="select">
+                            <input type="checkbox" v-model="selectAll" @click="selectall">
                             <i class="form-icon"></i>
                           </th>
                           <th>id#</th>
@@ -17,7 +17,7 @@
                   </thead>
                   <tbody>
                       <tr v-for="users in users" :key="users.id">
-                        <input type="checkbox" v-model="checked" :value="users.id">
+                        <input type="checkbox" v-model="checked" :value="users.id" @click="selectid">
                           <td>{{users.id}}</td>
                           <td>{{users.name}}</td>
                           <td>{{users.email}}</td>
@@ -40,7 +40,9 @@ import users from "@/data/data.json"
           return {
            users,
            checked: [],
-           selectAll: false
+           selectAll: false,
+           selectID: false,
+           userIDs: []
           }
         },
         methods: {
@@ -48,13 +50,24 @@ import users from "@/data/data.json"
                     json => this.users=json;
                             },
 
-              select() {
+              selectall() {
                         this.checked = [];
                         if (!this.selectAll) {
                           for (let users in this.users) {
                             this.checked.push(this.users[users].id);
                           }
                         }
+},
+selectid() {
+    this.userIDs = [];
+    if (this.selectID) {
+      for (users in this.users) {
+        this.userIds.push(this.users[users].id.toString());
+      }
+    }
+
+
+
 }
 }
 }
