@@ -15,7 +15,7 @@
                       <tr v-for="users in users" :key="users.id">
                         <input type="checkbox" v-model="checked" :value="users.id">
                           <td>{{users.id}}</td>
-                          <td>{{users.username}}</td>
+                          <td>{{users.name}}</td>
                           <td>{{users.email}}</td>
                           <td>{{users.phone}}</td>
                       </tr>
@@ -38,10 +38,9 @@ import users from "@/data/data.json"
           }
         },
         methods: function() {
-          r => r.json(users)
-          .then(json => {
+          json => 
             this.users=json;
-        })
+
 }
 }
 
