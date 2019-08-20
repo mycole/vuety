@@ -16,7 +16,7 @@
                       </tr>
                   </thead>
                   <tbody>
-                      <tr v-for="users in users" :key="users.id">
+                      <tr v-for="users in users" :key="users.index">
                         <input type="checkbox" v-model="checked" :value="users.id" @click="selectid">
                           <td>{{users.id}}</td>
                           <td>{{users.name}}</td>
@@ -62,7 +62,7 @@ selectid() {
     this.userIDs = [];
     if (this.selectID) {
       for (users in this.users) {
-        this.userIds.push(this.users[users].id.toString());
+        this.userIds.push(this.users[users].id);
       }
     }
 
