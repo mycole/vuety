@@ -25,6 +25,7 @@
                           <td>{{user.email}}</td>
                           <td>{{user.color}}</td>
                       </tr>
+                      <tr>{{checked}}</tr>
                   </tbody>
     </table>
     </div>
@@ -55,8 +56,8 @@ import users from "@/data/data2.json"
               selectall() {
                         this.checked = [];
                         if (!this.selectAll) {
-                          for (let users in this.users) {
-                            this.checked.push(this.users[users].id);
+                          for (let user in this.list) {
+                            this.checked.push(this.list[user].id);
                           }
                         }
 },
