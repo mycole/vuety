@@ -1,32 +1,29 @@
 <template>
   <div>
-    <!--  <div>
-
-      <button
-        v-for="(entry, index) in filterList"
-        :item="entry"
-        :key="index"
-        @click="
-          filter = entry;
-          active = index;
-        "
-        :class="{ active: entry == filter }"
-      >{{ entry }}</button>
-
+  <!--    <div>
+        <button
+              v-for="(entry, index) in filterList"
+              :item="entry"
+              :key="index"
+              @click="
+                filter = entry;
+                active = index;
+              "
+              :class="{ active: entry == filter }"
+            >
+              {{ entry }}
+            </button>
     </div>
-    -->
+-->
     <ul class="userWrap">
       <li
-        v-for="(entry, index) in users"
-        v-if="resultsFilter(entry, 'color', filter)"
-        :item="entry"
-        :key="index"
-        class="users"
+      v-for="user in list"
+      v-bind:key="user.id"
       >
-        <h2 class="title">{{ entry.name }}</h2>
+        <h2 class="title">{{ user.name }}</h2>
         <span class="language">
           Primary Language:
-          <strong>{{ entry.color }}</strong>
+          <strong>{{ user.color }}</strong>
         </span>
       </li>
     </ul>
@@ -40,24 +37,19 @@ export default {
   name: "DataDisplay",
   data: function() {
     return {
-      users,
-      fkey: "color",
-      filterList: ["red"],
-      filter: "red"
+      users: users
     };
   },
   methods: {
     function() {
       json => (this.users = json);
-    },
-    resultsFilter(entry) {
-      if (this.filter !== "All") {
-        if (entry[this.fkey] === this.filter) {
-          return entry;
-        }
-      } else {
-        return entry;
-      }
+    }
+  },
+  computed: {
+    list: function() {
+      return this.users.filter(function(user){
+        return user.color === 'blue'
+      })
     }
   }
 };

@@ -1,20 +1,20 @@
 <template>
   <div>
-    <!--  <div>
-
-      <button
-        v-for="(entry, index) in filterList"
-        :item="entry"
-        :key="index"
-        @click="
-          filter = entry;
-          active = index;
-        "
-        :class="{ active: entry == filter }"
-      >{{ entry }}</button>
-
+  <!--    <div>
+        <button
+              v-for="(entry, index) in filterList"
+              :item="entry"
+              :key="index"
+              @click="
+                filter = entry;
+                active = index;
+              "
+              :class="{ active: entry == filter }"
+            >
+              {{ entry }}
+            </button>
     </div>
-    -->
+-->
     <ul class="userWrap">
       <li
         v-for="(entry, index) in users"
@@ -42,8 +42,8 @@ export default {
     return {
       users,
       fkey: "color",
-      filterList: ["red"],
-      filter: "red"
+      filterList: ["blue", "red", "green", "All"],
+      filter: "All"
     };
   },
   methods: {
@@ -58,6 +58,13 @@ export default {
       } else {
         return entry;
       }
+    }
+  },
+  computed: {
+    list: function() {
+      return this.users.filter(function(user){
+        return user.filter === 'blue'
+      })
     }
   }
 };

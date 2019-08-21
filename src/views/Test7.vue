@@ -1,14 +1,14 @@
 <template>
   <div>
     {{ msg }}
-<GridComponentDataThree></GridComponentDataThree>
+<GridComponentDataFour></GridComponentDataFour>
 
 
 </div>
 </template>
 
   <script>
-  // import GridComponentDataThree from '@/components/GridComponentDataThree.vue'
+  import GridComponentDataFour from '@/components/GridComponentDataFour.vue'
 
 
   export default {
@@ -17,11 +17,11 @@
     return {
 
 
-      msg: 'das Haus der Prüfung sechs'
+      msg: 'das Haus der Prüfung seben'
     }
   },
   components: {
-  //  GridComponentDataThree
+    GridComponentDataFour
 
   }
     }

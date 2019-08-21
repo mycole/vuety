@@ -10,6 +10,7 @@ import Test3 from '@/views/Test3.vue'
 import Test4 from '@/views/Test4.vue'
 import Test5 from '@/views/Test5.vue'
 import Test6 from '@/views/Test6.vue'
+import Test7 from '@/views/Test7.vue'
 import Main from '@/views/Main.vue'
 
 Vue.use(Router)
@@ -68,6 +69,12 @@ component: Test5
 path: '/Test6',
 name: 'Test6',
 component: Test6
+}
+,
+{
+path: '/Test7',
+name: 'Test7',
+component: Test7
 }
 
   ]
