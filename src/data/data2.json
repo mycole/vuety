@@ -1,0 +1,79 @@
+[
+  {
+    "id": 0,
+    "name": "Lupe Bruce",
+    "email": "lupebruce@pharmex.com",
+    "phone": "+1 (974) 478-3840",
+    "color": "red"
+  },
+  {
+    "id": 1,
+    "name": "Martina Battle",
+    "email": "martinabattle@pharmex.com",
+    "phone": "+1 (905) 546-2970",
+    "color": "blue"
+  },
+  {
+    "id": 2,
+    "name": "Norris Thornton",
+    "email": "norristhornton@pharmex.com",
+    "phone": "+1 (926) 525-2997",
+    "color": "green"
+  },
+  {
+    "id": 3,
+    "name": "Holmes Gallegos",
+    "email": "holmesgallegos@pharmex.com",
+    "phone": "+1 (822) 538-3694",
+    "color": "red"
+  },
+  {
+    "id": 4,
+    "name": "Ingrid Herman",
+    "email": "ingridherman@pharmex.com",
+    "phone": "+1 (949) 543-2169",
+    "color": "green"
+  },
+  {
+    "id": 5,
+    "name": "Mason Bowman",
+    "email": "masonbowman@pharmex.com",
+    "phone": "+1 (878) 445-2481",
+    "color": "blue"
+  },
+  {
+    "id": 6,
+    "name": "Sweet Ferrell",
+    "email": "sweetferrell@pharmex.com",
+    "phone": "+1 (912) 437-2126",
+    "color": "blue"
+  },
+  {
+    "id": 7,
+    "name": "Ernestine Shields",
+    "email": "ernestineshields@pharmex.com",
+    "phone": "+1 (902) 574-3114",
+    "color": "blue"
+  },
+  {
+    "id": 8,
+    "name": "Sylvia Cleveland",
+    "email": "sylviacleveland@pharmex.com",
+    "phone": "+1 (956) 600-2501",
+    "color": "red"
+  },
+  {
+    "id": 9,
+    "name": "Downs Gillespie",
+    "email": "downsgillespie@pharmex.com",
+    "phone": "+1 (999) 405-2438",
+    "color": "blue"
+  },
+  {
+    "id": 10,
+    "name": "Acosta Ford",
+    "email": "acostaford@pharmex.com",
+    "phone": "+1 (922) 589-3604",
+    "color": "red"
+  }
+]

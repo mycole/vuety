@@ -2,7 +2,7 @@
   <div>
     {{ msg }}
 <GridComponentDataThree></GridComponentDataThree>
-<GridComponentDataThree></GridComponentDataThree>
+
 
 </div>
 </template>

@@ -1,86 +1,102 @@
 <template>
-<div>
-
-
-  <table>
-    <thead class="thead-dark">
-      <tr>
-        <th>
-          <input type="checkbox" v-model="selectAll" @click="selectall">
-          <i class="form-icon"></i>
-        </th>
-        <th>id#</th>
-        <th>Full Name</th>
-        <th>Email</th>
-        <th>Phone</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr v-for="users in users" :key="users.index">
-        <input name="item" type="checkbox" v-model="checked" :value="users.id" @click="selectid">
-        <td>{{users.id}}</td>
-        <td>{{users.name}}</td>
-        <td>{{users.email}}</td>
-        <td>{{users.phone}}</td>
-      </tr>
-      <tr>
-        <p>{{ checkCount }}</p>
-      </tr>
-    </tbody>
-  </table>
-</div>
+  <div>
+    <div>
+      <!--
+      <button
+        v-for="(entry, index) in filterList"
+        :item="entry"
+        :key="index"
+        @click="
+          filter = entry;
+          active = index;
+        "
+        :class="{ active: entry == filter }"
+      >{{ entry }}</button>
+      -->
+    </div>
+    <ul class="userWrap">
+      <li
+        v-for="(entry, index) in users"
+        v-if="resultsFilter(entry, 'color', filter)"
+        :item="entry"
+        :key="index"
+        class="users"
+      >
+        <h2 class="title">{{ entry.name }}</h2>
+        <span class="language">
+          Primary Language:
+          <strong>{{ entry.color }}</strong>
+        </span>
+      </li>
+    </ul>
+  </div>
 </template>
 
-
-
-
 <script>
-import users from "@/data/data.json"
+import users from "@/data/data2.json";
 
 export default {
-  name: "GridComponentDataThree",
+  name: "DataDisplay",
   data: function() {
     return {
       users,
-      checked: [],
-      selectAll: false,
-      selectID: false,
-      userIDs: []
-    }
+      fkey: "color",
+      filterList: ["red"],
+      filter: "red"
+    };
   },
   methods: {
     function() {
-      json => this.users = json;
+      json => (this.users = json);
     },
-
-    selectall() {
-      this.checked = [];
-      if (!this.selectAll) {
-        for (let users in this.users) {
-          this.checked.push(this.users[users].id);
+    resultsFilter(entry) {
+      if (this.filter !== "All") {
+        if (entry[this.fkey] === this.filter) {
+          return entry;
         }
-      }
-    },
-    selectid() {
-      this.userIDs = [];
-      if (this.selectID) {
-        for (users in this.users) {
-          this.userIds.push(this.users[users].id);
-        }
+      } else {
+        return entry;
       }
     }
-  },
-  computed: {
-    checkCount:
-    function() {
-      return this.checked.length;
-    }
   }
-
-  }
-
-
-// WORKING: https://stackoverflow.com/questions/56628157/vue-populate-table-with-axios
-//https://stackoverflow.com/questions/45565349/how-to-acces-external-json-file-objects-in-vue-js-app/45566350#45566350
-//https://howtocreateapps.com/vue-tutorial-json/
+};
 </script>
+
+<!-- Add "scoped" attribute to limit CSS to this component only -->
+<style scoped>
+button {
+  background: #74b6cc;
+  border: none;
+  color: #fff;
+  padding: 10px;
+  margin: 5px;
+}
+button.active {
+  background: #0089ba;
+}
+.userWrap {
+  list-style-type: none;
+  padding: 2%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  flex-direction: row;
+}
+.user {
+  padding: 10px;
+  margin: 1% 0;
+  border: 1px solid #ddd;
+  border-radius: 3px;
+  width: 46%;
+  text-align: left;
+}
+h2.title {
+  font-size: 1.3rem;
+  font-weight: bold;
+  margin: 0;
+}
+.language {
+  display: block;
+  font-size: 0.9rem;
+}
+</style>
