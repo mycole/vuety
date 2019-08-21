@@ -1,20 +1,6 @@
 <template>
   <div>
-  <!--    <div>
-        <button
-              v-for="(entry, index) in filterList"
-              :item="entry"
-              :key="index"
-              @click="
-                filter = entry;
-                active = index;
-              "
-              :class="{ active: entry == filter }"
-            >
-              {{ entry }}
-            </button>
-    </div>
--->
+
     <ul class="userWrap">
       <li
       v-for="user in list"
@@ -48,7 +34,7 @@ export default {
   computed: {
     list: function() {
       return this.users.filter(function(user){
-        return user.color === 'blue'
+        return user.color === 'red'
       })
     }
   }
@@ -57,16 +43,6 @@ export default {
 
 <!-- Add "scoped" attribute to limit CSS to this component only -->
 <style scoped>
-button {
-  background: #74b6cc;
-  border: none;
-  color: #fff;
-  padding: 10px;
-  margin: 5px;
-}
-button.active {
-  background: #0089ba;
-}
 .userWrap {
   list-style-type: none;
   padding: 2%;
