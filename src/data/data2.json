@@ -7,6 +7,13 @@
     "color": "red"
   },
   {
+    "id": 80,
+    "name": "Coop Truce",
+    "email": "cupetruce@pharmex.com",
+    "phone": "+1 (123) 678-3780",
+    "color": "red"
+  },
+  {
     "id": 1,
     "name": "Martina Battle",
     "email": "martinabattle@pharmex.com",
