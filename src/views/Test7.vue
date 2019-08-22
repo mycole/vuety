@@ -2,7 +2,7 @@
   <div>
     {{ msg }}
 <GridComponentDataFour></GridComponentDataFour>
-
+<GridComponentDataFour></GridComponentDataFour>
 
 </div>
 </template>
@@ -17,7 +17,7 @@
     return {
 
 
-      msg: 'das Haus der Prüfung sept'
+      msg: 'das Haus der Prüfung seben'
     }
   },
   components: {

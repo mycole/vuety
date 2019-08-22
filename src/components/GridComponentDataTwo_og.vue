@@ -12,20 +12,17 @@
                           <th>id#</th>
                           <th>Full Name</th>
                           <th>Email</th>
-                          <th>Color</th>
+                          <th>Phone</th>
                       </tr>
                   </thead>
                   <tbody>
-                      <tr v-for="user in list"
-                      v-bind:key="user.id"
-                      >
-                        <input type="checkbox" v-model="checked" :value="user.id" @click="selectid">
-                          <td>{{user.id}}</td>
-                          <td>{{user.name}}</td>
-                          <td>{{user.email}}</td>
-                          <td>{{user.color}}</td>
+                      <tr v-for="users in users" :key="users.index">
+                        <input type="checkbox" v-model="checked" :value="users.id" @click="selectid">
+                          <td>{{users.id}}</td>
+                          <td>{{users.name}}</td>
+                          <td>{{users.email}}</td>
+                          <td>{{users.phone}}</td>
                       </tr>
-                      <tr>{{checked}}</tr>
                   </tbody>
     </table>
     </div>
@@ -35,7 +32,7 @@
 
 
 <script>
-import users from "@/data/data2.json"
+import users from "@/data/data.json"
 
       export default{
         name: "GridComponentDataTwo",
@@ -56,8 +53,8 @@ import users from "@/data/data2.json"
               selectall() {
                         this.checked = [];
                         if (!this.selectAll) {
-                          for (let user in this.list) {
-                            this.checked.push(this.list[user].id);
+                          for (let users in this.users) {
+                            this.checked.push(this.users[users].id);
                           }
                         }
 },
@@ -72,13 +69,6 @@ selectid() {
 
 
 }
-},
-computed: {
-  list: function() {
-    return this.users.filter(function(user){
-      return user.color === 'red'
-    })
-  }
 }
 }
 

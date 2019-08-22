@@ -8,7 +8,7 @@
 </template>
 
   <script>
-  import GridComponentDataThree from '@/components/GridComponentDataThree.vue'
+   import GridComponentDataThree from '@/components/GridComponentDataThree.vue'
 
 
   export default {

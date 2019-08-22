@@ -13,7 +13,7 @@
                   <li>    <router-link to='/Test4'>Test4</router-link></li>
                   <li>    <router-link to='/Test5'>Test5</router-link></li>
                   <li>    <router-link to='/Test6'>Test6</router-link></li>
-                  <li>    <router-link to='/Test7'>Test7</router-link></li>
+                    <li>    <router-link to='/Test7'>Test7</router-link></li>
         </ul>
     </div>
 </div>
