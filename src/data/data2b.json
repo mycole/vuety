@@ -1,0 +1,74 @@
+[
+  {
+    "id": 0,
+    "name": "Tracy Mcfadden",
+    "email": "tracymcfadden@martgo.com",
+    "phone": "+1 (861) 409-2069",
+    "color": "green",
+    "point": 1
+  },
+  {
+    "id": 1,
+    "name": "Neva Wade",
+    "email": "nevawade@martgo.com",
+    "phone": "+1 (805) 575-3118",
+    "color": "blue",
+    "point": 1
+  },
+  {
+    "id": 2,
+    "name": "Kirk Barry",
+    "email": "kirkbarry@martgo.com",
+    "phone": "+1 (988) 478-2882",
+    "color": "green",
+    "point": 1
+  },
+  {
+    "id": 3,
+    "name": "Fuller Paul",
+    "email": "fullerpaul@martgo.com",
+    "phone": "+1 (963) 415-3031",
+    "color": "red",
+    "point": 1
+  },
+  {
+    "id": 4,
+    "name": "Underwood Case",
+    "email": "underwoodcase@martgo.com",
+    "phone": "+1 (974) 600-3705",
+    "color": "red",
+    "point": 1
+  },
+  {
+    "id": 5,
+    "name": "Marks Hodge",
+    "email": "markshodge@martgo.com",
+    "phone": "+1 (883) 490-2931",
+    "color": "blue",
+    "point": 1
+  },
+  {
+    "id": 6,
+    "name": "Schwartz Fowler",
+    "email": "schwartzfowler@martgo.com",
+    "phone": "+1 (878) 580-3466",
+    "color": "blue",
+    "point": 1
+  },
+  {
+    "id": 7,
+    "name": "Hickman Spears",
+    "email": "hickmanspears@martgo.com",
+    "phone": "+1 (835) 502-3414",
+    "color": "blue",
+    "point": 1
+  },
+  {
+    "id": 8,
+    "name": "Foreman Patterson",
+    "email": "foremanpatterson@martgo.com",
+    "phone": "+1 (858) 478-2289",
+    "color": "red",
+    "point": 1
+  }
+]

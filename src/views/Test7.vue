@@ -12,7 +12,7 @@
 
 
   export default {
-    name: 'Test6',
+    name: 'Test7',
     data() {
     return {
 

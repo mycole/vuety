@@ -4,16 +4,18 @@
   <div class ="topnav">
     <ul>
       <li><router-link to='/Home'>Home</router-link></li>
-            <li>  <router-link to='/HelloWorld'>HelloWorld</router-link></li>
-          <li>    <router-link to='/One'>One</router-link></li>
-          <li>    <router-link to='/Test1'>Test1</router-link></li>
-              <li>    <router-link to='/'>Main</router-link></li>
-              <li>    <router-link to='/Test2'>Test2</router-link></li>
-                <li>    <router-link to='/Test3'>Test3</router-link></li>
-                  <li>    <router-link to='/Test4'>Test4</router-link></li>
-                  <li>    <router-link to='/Test5'>Test5</router-link></li>
-                  <li>    <router-link to='/Test6'>Test6</router-link></li>
-                    <li>    <router-link to='/Test7'>Test7</router-link></li>
+      <li><router-link to='/HelloWorld'>HelloWorld</router-link></li>
+      <li><router-link to='/One'>One</router-link></li>
+      <li><router-link to='/Test1'>Test1</router-link></li>
+      <li><router-link to='/'>Main</router-link></li>
+      <li><router-link to='/Test2'>Test2</router-link></li>
+      <li><router-link to='/Test3'>Test3</router-link></li>
+      <li><router-link to='/Test4'>Test4</router-link></li>
+      <li><router-link to='/Test5'>Test5</router-link></li>
+      <li><router-link to='/Test6'>Test6</router-link></li>
+      <li><router-link to='/Test7'>Test7</router-link></li>
+      <li><router-link to='/Test8'>Test8</router-link></li>
+
         </ul>
     </div>
 </div>
