@@ -42,6 +42,7 @@ import users from "@/data/data2b.json";
 
 export default {
   name: "GridComponentDataFiveB",
+  props: ['totalMarks'],
   data: function() {
     return {
       users,
