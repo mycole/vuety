@@ -1,6 +1,32 @@
 <template>
   <div>
-    <div class="container">
+    <button
+      v-for="(entry, index) in filterList"
+      :item="entry"
+      :key="index"
+      @click="
+          filter = entry;
+          active = index;
+        "
+      :class="{ active: entry == filter }"
+    >{{ entry }}</button>
+
+    <ul class="userWrap">
+      <li
+        v-for="(entry, index) in users"
+        v-if="resultsFilter(entry, 'color', filter)"
+        :item="entry"
+        :key="index"
+        class="user"
+      >
+        <h2 class="title">{{ entry.name }}</h2>
+        <span class="language">Primary Language:
+          <strong>{{ entry.color }}</strong>
+        </span>
+      </li>
+    </ul>
+
+    ///
     <table>
       <thead class="thead-dark">
         <tr>
@@ -31,7 +57,6 @@
       </tbody>
     </table>
   </div>
-  </div>
 </template>
 
 
@@ -39,10 +64,10 @@
 
 <script>
 import users from "@/data/data2.json";
+import GroupFilter from "@/components/GroupFilter.vue";
 
 export default {
-  name: "GridComponentDataFiveA",
-  props: ['totalMarks'],
+  name: "GridComponentDataSix",
   data: function() {
     return {
       users,
@@ -81,13 +106,16 @@ export default {
         // return user.color !== "green";
       });
     },
-/*    totalMarks: function() {
+    totalMarks: function() {
       let total = 0;
       for (let i = 0; i < this.checked.length; i++) {
         total += parseInt(this.list[i].point);
       }
       return total;
-    } */
+    }
+  },
+  components: {
+    GroupFilter
   }
 };
 
@@ -95,22 +123,3 @@ export default {
 //https://stackoverflow.com/questions/45565349/how-to-acces-external-json-file-objects-in-vue-js-app/45566350#45566350
 //https://howtocreateapps.com/vue-tutorial-json/
 </script>
-
-<style scoped>
-.container {
-  display: flex;
-  flex-wrap: wrap;
-
-justify-content: center;
-margin: 0 auto;
-
-  width: 600px;
-
-  border-style: solid;
-  border-width: 2px;
-  border-color: black;
-  top: 10px;
-}
-
-
-</style>

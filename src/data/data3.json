@@ -1,0 +1,248 @@
+[
+  {
+    "id": 0,
+    "logo": "http://res.cloudinary.com/johnayeni/image/upload/v1524501994/vue-logo_uoxef2.png",
+    "standard": "Et velit do id nostrud Lorem anim amet aliquip velit magna mollit excepteur aute.",
+    "study": [
+      {
+        "name": "VISUALIX"
+      }
+    ],
+    "group": ["brown", "green"],
+    "point": 1
+  },
+  {
+    "id": 1,
+    "logo": "http://res.cloudinary.com/johnayeni/image/upload/v1524501994/vue-logo_uoxef2.png",
+    "standard": "Dolore ullamco irure veniam exercitation reprehenderit reprehenderit culpa Lorem ad.",
+    "study": [
+      {
+        "name": "ROCKLOGIC"
+      }
+    ],
+    "group": ["green"],
+    "point": 1
+  },
+  {
+    "id": 1,
+    "logo": "http://res.cloudinary.com/johnayeni/image/upload/v1524501994/vue-logo_uoxef2.png",
+    "standard": "Magna incididunt ea laborum minim.",
+    "study": [
+      {
+        "name": "VISUALIX"
+      }
+    ],
+    "group": ["brown", "green"],
+    "point": 1
+  },
+  {
+    "id": 3,
+    "logo": "http://res.cloudinary.com/johnayeni/image/upload/v1524501994/vue-logo_uoxef2.png",
+    "standard": "Reprehenderit adipisicing laboris et ut velit labore qui.",
+    "study": [
+      {
+        "name": "PAPRICUT"
+      },
+      {
+        "name": "VISUALIX"
+      }
+    ],
+    "group": ["green"],
+    "point": 1
+  },
+  {
+    "id": 4,
+    "logo": "http://res.cloudinary.com/johnayeni/image/upload/v1524501994/vue-logo_uoxef2.png",
+    "standard": "Ad cillum cupidatat reprehenderit non Lorem aute ex et esse veniam.",
+    "study": [
+      {
+        "name": "PAPRICUT"
+      }
+    ],
+    "group": ["brown"],
+    "point": 1
+  },
+  {
+    "id": 5,
+    "logo": "http://res.cloudinary.com/johnayeni/image/upload/v1524501994/vue-logo_uoxef2.png",
+    "standard": "Cillum proident veniam reprehenderit aute proident id duis incididunt.",
+    "study": [
+      {
+        "name": "ROCKLOGIC"
+      },
+      {
+        "name": "VISUALIX"
+      }
+    ],
+    "group": ["brown"],
+    "point": 1
+  },
+  {
+    "id": 6,
+    "logo": "http://res.cloudinary.com/johnayeni/image/upload/v1524501994/vue-logo_uoxef2.png",
+    "standard": "Deserunt aliqua culpa ex sint dolore commodo.",
+    "study": [
+      {
+        "name": "VISUALIX"
+      }
+    ],
+    "group": ["brown", "blue"],
+    "point": 1
+  },
+  {
+    "id": 7,
+    "logo": "http://res.cloudinary.com/johnayeni/image/upload/v1524501994/vue-logo_uoxef2.png",
+    "standard": "Incididunt occaecat amet nostrud non Lorem ex.",
+    "study": [
+      {
+        "name": "ROCKLOGIC"
+      },
+      {
+        "name": "PAPRICUT"
+      }
+    ],
+    "group": ["green"],
+    "point": 1
+  },
+  {
+    "id": 8,
+    "logo": "http://res.cloudinary.com/johnayeni/image/upload/v1524501994/vue-logo_uoxef2.png",
+    "standard": "Ad eiusmod dolore id magna irure laboris tempor irure deserunt laborum ex reprehenderit exercitation.",
+    "study": [
+      {
+        "name": "VISUALIX"
+      }
+    ],
+    "group": ["brown", "blue"],
+    "point": 1
+  },
+  {
+    "id": 9,
+    "logo": "http://res.cloudinary.com/johnayeni/image/upload/v1524501994/vue-logo_uoxef2.png",
+    "standard": "Eiusmod fugiat labore consectetur qui exercitation laborum mollit nostrud.",
+    "study": [
+      {
+        "name": "VISUALIX"
+      }
+    ],
+    "group": ["brown"],
+    "point": 1
+  },
+  {
+    "id": 10,
+    "logo": "http://res.cloudinary.com/johnayeni/image/upload/v1524501994/vue-logo_uoxef2.png",
+    "standard": "Esse deserunt officia deserunt culpa irure.",
+    "study": [
+      {
+        "name": "VISUALIX"
+      },
+      {
+        "name": "ROCKLOGIC"
+      }
+    ],
+    "group": ["green", "blue"],
+    "point": 1
+  },
+  {
+    "id": 11,
+    "logo": "http://res.cloudinary.com/johnayeni/image/upload/v1524501994/vue-logo_uoxef2.png",
+    "standard": "Voluptate id esse ea eiusmod qui quis.",
+    "study": [
+      {
+        "name": "ROCKLOGIC"
+      },
+      {
+        "name": "VISUALIX"
+      }
+    ],
+    "group": ["brown"],
+    "point": 1
+  },
+  {
+    "id": 12,
+    "logo": "http://res.cloudinary.com/johnayeni/image/upload/v1524501994/vue-logo_uoxef2.png",
+    "standard": "Aute irure veniam labore nulla duis eu fugiat cupidatat commodo adipisicing cillum eiusmod.",
+    "study": [
+      {
+        "name": "VISUALIX"
+      },
+      {
+        "name": "ROCKLOGIC"
+      }
+    ],
+    "group": ["green"],
+    "point": 1
+  },
+  {
+    "id": 13,
+    "logo": "http://res.cloudinary.com/johnayeni/image/upload/v1524501994/vue-logo_uoxef2.png",
+    "standard": "Commodo nostrud nulla eu fugiat consectetur labore qui eu in.",
+    "study": [
+      {
+        "name": "ROCKLOGIC"
+      },
+      {
+        "name": "ROCKLOGIC"
+      }
+    ],
+    "group": ["brown", "blue"],
+    "point": 1
+  },
+  {
+    "id": 14,
+    "logo": "http://res.cloudinary.com/johnayeni/image/upload/v1524501994/vue-logo_uoxef2.png",
+    "standard": "Irure elit laborum quis magna sit labore ad.",
+    "study": [
+      {
+        "name": "ROCKLOGIC"
+      },
+      {
+        "name": "PAPRICUT"
+      }
+    ],
+    "group": ["brown"],
+    "point": 1
+  },
+  {
+    "id": 15,
+    "logo": "http://res.cloudinary.com/johnayeni/image/upload/v1524501994/vue-logo_uoxef2.png",
+    "standard": "Pariatur nisi id quis anim esse sunt proident laboris.",
+    "study": [
+      {
+        "name": "VISUALIX"
+      }
+    ],
+    "group": ["brown"],
+    "point": 1
+  },
+  {
+    "id": 16,
+    "logo": "http://res.cloudinary.com/johnayeni/image/upload/v1524501994/vue-logo_uoxef2.png",
+    "standard": "Ad elit excepteur adipisicing nulla incididunt reprehenderit mollit culpa laboris.",
+    "study": [
+      {
+        "name": "PAPRICUT"
+      },
+      {
+        "name": "ROCKLOGIC"
+      }
+    ],
+    "group": ["brown"],
+    "point": 1
+  },
+  {
+    "id": 17,
+    "logo": "http://res.cloudinary.com/johnayeni/image/upload/v1524501994/vue-logo_uoxef2.png",
+    "standard": "Cupidatat in dolore est commodo.",
+    "study": [
+      {
+        "name": "ROCKLOGIC"
+      },
+      {
+        "name": "PAPRICUT"
+      }
+    ],
+    "group": ["brown", "blue"],
+    "point": 1
+  }
+]

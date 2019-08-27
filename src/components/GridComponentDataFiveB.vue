@@ -25,7 +25,7 @@
         </tr>
         <tr>
           <strong>Total:</strong>
-          <span class="content">{{ totalMarks }}</span>
+      <!--    <span class="content">{{ totalMarks }}</span> -->
         </tr>
         <tr>{{checked}}</tr>
       </tbody>
@@ -81,16 +81,16 @@ export default {
         // return user.color !== "green";
       });
     },
-    totalMarks: function() {
+  /*  totalMarks: function() {
       let total = 0;
       for (let i = 0; i < this.checked.length; i++) {
         total += parseInt(this.list[i].point);
       }
       return total;
     }
-  }
-};
-
+  }*/
+}
+}
 // WORKING: https://stackoverflow.com/questions/56628157/vue-populate-table-with-axios
 //https://stackoverflow.com/questions/45565349/how-to-acces-external-json-file-objects-in-vue-js-app/45566350#45566350
 //https://howtocreateapps.com/vue-tutorial-json/

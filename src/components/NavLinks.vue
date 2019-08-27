@@ -15,6 +15,8 @@
       <li><router-link to='/Test6'>Test6</router-link></li>
       <li><router-link to='/Test7'>Test7</router-link></li>
       <li><router-link to='/Test8'>Test8</router-link></li>
+      <li><router-link to='/Test9'>Test9</router-link></li>
+      <li><router-link to='/Test10'>Test10</router-link></li>
 
         </ul>
     </div>
